@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\BasicCarScript.cs" />
+     <Compile Include="Assets\BoulderSpawn.cs" />
      <Compile Include="Assets\FrontRollBar.cs" />
      <Compile Include="Assets\VeryBasicCarScript.cs" />
  <Reference Include="UnityEngine.UI">

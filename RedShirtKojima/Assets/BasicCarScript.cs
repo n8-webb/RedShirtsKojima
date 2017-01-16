@@ -23,7 +23,7 @@ public class BasicCarScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        power = Input.GetAxis("Vertical") * enginePower * Time.deltaTime * 120.0f;
+        power = Input.GetAxis("Vertical") * enginePower * Time.deltaTime * 200.0f;
         steer = Input.GetAxis("Horizontal") * maxSteer;
         brake = Input.GetKey("space") ? rb.mass * 0.1f : 0.0f;
         Debug.Log(power);
