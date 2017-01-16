@@ -8,6 +8,12 @@ public class BasicCarScript : MonoBehaviour {
 
     public WheelCollider frontLeft, frontRight, backLeft, backRight;
 
+    Camera carCamera;
+    Vector3 camTargetPos;
+    Vector3 camOffsetPos;
+    Quaternion camTargetRot;
+    Quaternion camOffsetRot;
+
     float enginePower = 160.0f;
 
     float power = 0.0f;
@@ -19,6 +25,9 @@ public class BasicCarScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         rb.centerOfMass = new Vector3(0.0f, 0.5f, 0.3f);
+        CameraSetup();
+
+        
 	}
 	
 	// Update is called once per frame
@@ -51,5 +60,31 @@ public class BasicCarScript : MonoBehaviour {
             backRight.motorTorque = power;
         }
 
+        CameraLogic();
     }
+
+    void CameraSetup()
+    {
+        carCamera = gameObject.GetComponent<Camera>();
+
+        carCamera.transform.Rotate(0.0f, 180.0f, 0.0f); //HERE
+
+        camOffsetPos = new Vector3(0.0f, 0.23f, 0.045f);
+        ////transform.rotation = Quaternion.LookRotation(camTargetRot, Vector3.up);
+        carCamera.transform.rotation = Quaternion.Euler(camTargetRot.x, 1.0f, camTargetRot.z);
+    }
+
+    void CameraLogic()
+    {
+        //camTargetPos = transform.position - camOffsetPos;
+
+        //transform.localPosition = camTargetPos;
+
+        ////if (camTargetPos != transform.localPosition)
+        ////{
+
+        ////}
+        ////camTargetRot = transform.rotation - camOffsetRot;
+    }
+
 }

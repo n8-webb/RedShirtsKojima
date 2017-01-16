@@ -1,7 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{D928F0FE-3687-DC96-7C24-261015DA010A}") = "RedShirtKojima", "Assembly-CSharp.csproj", "{E28EBBCE-31FB-9D2F-D625-78A284F57B31}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedShirtKojima.CSharp", "RedShirtKojima.CSharp.csproj", "{DA1475F4-AF4F-A058-9BA9-A42FEB268F3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E28EBBCE-31FB-9D2F-D625-78A284F57B31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E28EBBCE-31FB-9D2F-D625-78A284F57B31}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E28EBBCE-31FB-9D2F-D625-78A284F57B31}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E28EBBCE-31FB-9D2F-D625-78A284F57B31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA1475F4-AF4F-A058-9BA9-A42FEB268F3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA1475F4-AF4F-A058-9BA9-A42FEB268F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA1475F4-AF4F-A058-9BA9-A42FEB268F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA1475F4-AF4F-A058-9BA9-A42FEB268F3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
