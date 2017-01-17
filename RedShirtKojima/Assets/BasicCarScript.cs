@@ -26,7 +26,7 @@ public class BasicCarScript : MonoBehaviour {
         power = Input.GetAxis("Vertical") * enginePower * Time.deltaTime * 200.0f;
         steer = Input.GetAxis("Horizontal") * maxSteer;
         brake = Input.GetKey("space") ? rb.mass * 0.1f : 0.0f;
-        Debug.Log(power);
+        //Debug.Log(power);
         frontLeft.steerAngle = steer;
         frontRight.steerAngle = steer;
         
