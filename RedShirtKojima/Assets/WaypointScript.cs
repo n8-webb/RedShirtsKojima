@@ -22,8 +22,16 @@ public class WaypointScript : MonoBehaviour {
 	    
 	}
 
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider other)
     {
+        if(other.tag == "Player")
+        {
+            CharacterScore playerScore =  other.transform.GetComponent<CharacterScore>();
+            playerScore.addScore();
+        }
+
+
+
         switch (currentPoint)
         {
             case CurrentPoint.POINT_ONE:
