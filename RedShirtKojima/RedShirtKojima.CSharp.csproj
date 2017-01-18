@@ -56,6 +56,12 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -63,12 +69,15 @@
   <ItemGroup>
     <Compile Include="Assets\BasicCarScript.cs" />
     <Compile Include="Assets\BoulderSpawn.cs" />
+    <Compile Include="Assets\CamScript.cs" />
     <Compile Include="Assets\CameraScript.cs" />
+    <Compile Include="Assets\CarScript.cs" />
     <Compile Include="Assets\CharacterScore.cs" />
     <Compile Include="Assets\FrontRollBar.cs" />
     <Compile Include="Assets\Timer.cs" />
     <Compile Include="Assets\VeryBasicCarScript.cs" />
     <Compile Include="Assets\WaypointScript.cs" />
+    <Compile Include="Assets\player.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

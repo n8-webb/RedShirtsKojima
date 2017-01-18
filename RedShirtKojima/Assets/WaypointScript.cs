@@ -4,8 +4,8 @@ using System.Collections;
 enum CurrentPoint { POINT_ONE, POINT_TWO};
 
 public class WaypointScript : MonoBehaviour {
-    Vector3 point1 = new Vector3(92.4f, -1.5f, 33.2f);
-    Vector3 point2 = new Vector3(-5.7f, -1.5f, -48.0f);
+    Vector3 point1 = new Vector3(-5.7f, -1.5f, -48.0f);
+    Vector3 point2 = new Vector3(92.4f, -1.5f, 33.2f);
 
     CurrentPoint currentPoint = new CurrentPoint();
 
