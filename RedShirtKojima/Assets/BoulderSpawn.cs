@@ -16,22 +16,22 @@ public class BoulderSpawn : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         
-        Destroy(Boulder, 5.0f);
+        //Destroy(Boulder, 5.0f);
 
-        if (canSpawn == true)
-        {
+        //if (canSpawn == true)
+        //{
             Instantiate(Boulder, transform.position, transform.rotation);
-            canSpawn = false;
-        }
-        else
-        {
-            boulderTick++;
-            if (boulderTick >= boulderSpawnrate)
-            {
-                boulderTick = 0;
-                canSpawn = true;
-            }
-        }
+        //    canSpawn = false;
+        //}
+        //else
+        //{
+        //    boulderTick++;
+        //    if (boulderTick >= boulderSpawnrate)
+        //    {
+        //        boulderTick = 0;
+        //        canSpawn = true;
+        //    }
+        //}
 
 	}
 

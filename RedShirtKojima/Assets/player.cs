@@ -9,7 +9,7 @@ public class player : MonoBehaviour
     public Transform Car; // Your Car Model
     //public Transform MyCamera; // Your Camera
     float movespeed = 0.0F;
-    public float fuel = 1000.0F;
+    public float fuel = 10000000.0F;
     int gas_pedal = 0;
     public int health = 100; // Not Used YET
     int rpm = 0;
