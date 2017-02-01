@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Kojima.unity
+- path: Assets/Scenes/Kojima.unity
   isLoaded: 1
   isActive: 1
