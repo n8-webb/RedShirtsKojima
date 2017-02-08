@@ -456,7 +456,7 @@ namespace Kojima
                         curTorqueSpeed = Mathf.Clamp(curTorqueSpeed, -m_myInfo.m_fturnSpeed, m_myInfo.m_fturnSpeed);
 
                         if (m_nplayerIndex == 1)
-                            Debug.Log(curTorqueSpeed);
+                            //Debug.Log(curTorqueSpeed);
 
                         if (m_wheelIsGrounded[i])
                         {

@@ -26,12 +26,13 @@ public class CarDraft : MonoBehaviour {
         {
             timer = 0.0f;
             GameObject newTrigger = Instantiate(triggerPrefrab);
-            newTrigger.transform.parent = transform.parent;
             newTrigger.transform.position = transform.position;
+            newTrigger.GetComponent<DraftTrigger>().parentName = transform.name;
             carDraftTriggers.Add(newTrigger);
+
         }
 
-
+        /*
         foreach (GameObject trigger in carDraftTriggers)
         {
             DraftTrigger triggerScript = trigger.GetComponent<DraftTrigger>();
@@ -43,6 +44,6 @@ public class CarDraft : MonoBehaviour {
                 GameObject.Destroy(trigger);
                 
             }
-        }
+        }*/
     }
 }

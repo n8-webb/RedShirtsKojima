@@ -218,7 +218,7 @@ namespace Bam
             Vector3 returnVector = targetPos;
 
             RaycastHit rH;
-            if (Physics.Linecast(m_mainPlayer.transform.position + Vector3.up, targetPos, out rH, LayerMask.GetMask("Default")))
+            if (Physics.Linecast(m_mainPlayer.transform.position + Vector3.up, targetPos, out rH, LayerMask.GetMask("Default"), QueryTriggerInteraction.Ignore))
             {
                 //Debug.Log(rH.collider.gameObject.name);
                 //Debug.Log(mainPlayer.transform.forward);

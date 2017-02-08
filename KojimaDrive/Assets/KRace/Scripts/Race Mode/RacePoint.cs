@@ -23,18 +23,20 @@ namespace KRace
         public List<GameObject> checkPointList = new List<GameObject>();
         public int size;
         public Text checkpointsText;
-		public Material matStart;
-		public Material matCheck;
-		public Material matFinish;
+		
+		
+		 
 
 		Renderer rend;
 
 		// Use this for initialization
 		void Start()
 		{
-            
 
-			 rend = GetComponent<Renderer>();
+            Material matStart = Resources.Load("wpStart") as Material;
+            Material matCheck = Resources.Load("wpCheckPoint") as Material;
+            Material matFinish = Resources.Load("wpFinish") as Material;
+            rend = GetComponent<Renderer>();
 			switch (types)
 			{
 				case RP_Type.START:
