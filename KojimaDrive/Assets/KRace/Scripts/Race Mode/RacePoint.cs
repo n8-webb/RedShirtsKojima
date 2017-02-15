@@ -59,7 +59,7 @@ namespace KRace
             foreach (GameObject racePoint in GameObject.FindGameObjectsWithTag("CheckPoint"))
             {
 
-                checkPointList.Insert(checkPointList.Count,racePoint);
+                checkPointList.Insert(0,racePoint);
             }
 
 
@@ -87,10 +87,10 @@ namespace KRace
 		void InitialiseGrid(int gridSize)
 		{
 			//this sets up where the starting grid positions are from our start point
-			gridPositions[0] = (this.transform.position - new Vector3(2.0f, 0.3f, 0.0f));
-			gridPositions[1] = (this.transform.position - new Vector3(4.0f, 0.3f, 0.0f));
-			gridPositions[2] = (this.transform.position - new Vector3(6.0f, 0.3f, 0.0f));
-			gridPositions[3] = (this.transform.position - new Vector3(8.0f, 0.3f, 0.0f));
+			gridPositions[0] = (this.transform.position - new Vector3(-2.0f, -0.3f, 0.0f));
+			gridPositions[1] = (this.transform.position - new Vector3(-4.0f, -0.3f, 0.0f));
+			gridPositions[2] = (this.transform.position - new Vector3(-6.0f, -0.3f, 0.0f));
+			gridPositions[3] = (this.transform.position - new Vector3(-8.0f, -0.3f, 0.0f));
 
 
 
